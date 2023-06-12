@@ -2,11 +2,10 @@ Assessment: Flutter - Sign Up and Login Screens with Password Visibility and Tok
 
 Instructions:
 
-1. Create a Flutter app that includes a Sign Up screen.
-2. Create a Flutter app that includes a Login screen.
-3. Implement the functionality to show/hide the password using an eye icon.
-4. Use the `projects_final` API project for authentication.
-5. Save a token key in storage when the app is built again.
+1. Create a Flutter app that includes a Sign Up/Login screens.
+2. Implement the functionality to show/hide the password using an eye icon.
+3. Use the `projects_final` API project for authentication.
+4. Save a token key in storage when the app is built again.
 
 Tasks:
 
