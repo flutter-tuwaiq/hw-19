@@ -25,11 +25,9 @@ Tasks:
 
 Evaluation Criteria:
 
-1. The Flutter app should be created successfully with the necessary dependencies and configurations. (2 points)
-2. The Sign Up screen should contain the required elements, and the Sign Up button should register the user successfully. (5 points)
-3. The Login screen should contain the required elements, and the Login button should authenticate the user successfully. (5 points)
-4. The password fields on both screens should have an eye icon that toggles the password visibility. (3 points)
-5. The app should communicate with the `projects_final` API project for authentication. (5 points)
-6. The token key should be saved to storage and loaded again when the app is restarted. (5 points)
-
-Note: This assessment assumes that students have prior knowledge of Flutter development, including API integration and handling form submissions. It also assumes the availability of the `projects_final` API project and its documentation.
+1. The Flutter app should be created successfully with the necessary dependencies and configurations
+2. The Sign Up screen should contain the required elements, and the Sign Up button should register the user successfully
+3. The Login screen should contain the required elements, and the Login button should authenticate the user successfully. 
+4. The password fields on both screens should have an eye icon that toggles the password visibility
+5. The app should communicate with the `projects_final` API project for authentication.
+6. The token key should be saved to storage and loaded again when the app is restarted.
