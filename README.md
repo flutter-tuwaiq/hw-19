@@ -2,22 +2,22 @@
 
 ## Instructions:
 
-1. Create a Flutter app that includes a Sign Up/Login screens.
-2. Implement the functionality to show/hide the password using an eye icon.
+<!-- 1. Create a Flutter app that includes a Sign Up/Login screens. -->
+<!-- 2. Implement the functionality to show/hide the password using an eye icon. -->
 3. Use the `projects_final` API project for authentication.
 4. Save a token key in storage when the app is built again.
 
 ## Tasks:
 
-1. Create a new Flutter project 
-2. Create a file named `api.dart` and implement the necessary API methods to communicate with the `projects_final` API project for authentication. You can use packages like `http` or `dio` for making API calls.
-3. Implement a Sign Up screen with the following elements:
-   - Text fields for entering name, email, username and password.
-   - Sign Up button to register the user.
-4. Implement a Login screen with the following elements:
-   - Text fields for entering email and password.
-   - Login button to authenticate the user.
-5. On both the Sign Up and Login screens, implement the functionality to show/hide the password using an eye icon.
+<!-- 1. Create a new Flutter project  -->
+<!-- 2. Create a file named `api.dart` and implement the necessary API methods to communicate with the `projects_final` API project for authentication. You can use packages like `http` or `dio` for making API calls. -->
+<!-- 3. Implement a Sign Up screen with the following elements: -->
+   <!-- - Text fields for entering name, email, username and password. -->
+   <!-- - Sign Up button to register the user. -->
+<!-- 4. Implement a Login screen with the following elements: -->
+   <!-- - Text fields for entering email and password. -->
+   <!-- - Login button to authenticate the user. -->
+<!-- 5. On both the Sign Up and Login screens, implement the functionality to show/hide the password using an eye icon. -->
 6. Implement the logic to save the token key in storage when the app is built again. You can use packages like `shared_preferences` or `getstorge` for storing the token key securely.
 7. Test the app by signing up with a new user, logging in with the same user, and verifying that the token key is saved and loaded correctly.
 
