@@ -1,9 +1,12 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
 import 'package:hw_19_test/component/custom_textField.dart';
 import 'package:hw_19_test/pages/home_page.dart';
 import 'package:hw_19_test/pages/signup_page.dart';
 import 'package:hw_19_test/services/api/login_user.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -22,8 +25,7 @@ class _LoginPageState extends State<LoginPage> {
     return MaterialApp(
       home: Scaffold(
           backgroundColor: Color.fromARGB(255, 140, 171, 168),
-          appBar: 
-          AppBar(
+          appBar: AppBar(
             backgroundColor: Color.fromARGB(255, 140, 171, 168),
             title: PageLable(
               title: 'Login',
@@ -40,7 +42,6 @@ class _LoginPageState extends State<LoginPage> {
                       color: Colors.black,
                     ))),
           ),
-          
           body: ListView(
             children: [
               TextFieldCustom(
@@ -70,14 +71,22 @@ class _LoginPageState extends State<LoginPage> {
                         "password": passwordController.text
                       };
                       final response = await loginUser(body: body);
+                      var result = jsonDecode(response.body);
                       print(response.body);
+                      final SharedPreferences prefs =
+                          await SharedPreferences.getInstance();
+
                       if (response.statusCode == 200) {
+                        await prefs.setString('token', result['token']);
                         Navigator.of(context).pushAndRemoveUntil(
                             MaterialPageRoute(builder: (context) => HomePage()),
                             (route) => false);
                       }
                     },
-                    child: Text('Login',style: TextStyle(fontWeight: FontWeight.bold),)),
+                    child: Text(
+                      'Login',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    )),
               ),
             ],
           )),
